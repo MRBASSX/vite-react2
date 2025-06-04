@@ -1,10 +1,14 @@
 import React from 'react'
 import {MyDatabase} from '../component/listed'
 import Button from '../component/Button'
+import LoadingIndicator from '../component/LoadingIndicator'
+import { useState } from 'react'
 
 
  
 function Home({name,age,birth,database}) {
+
+   const [loading,SetLoading] = useState(false);
 
 
 //    const  message = [
@@ -16,7 +20,14 @@ function Home({name,age,birth,database}) {
 
 const Mariam = (e)=>{
      e.preventDefault();
-     alert("Mariam")
+     
+     SetLoading(false)
+
+     setTimeout(()=>{
+
+ SetLoading(true)
+
+     },5000)
    
   }
 
@@ -38,6 +49,9 @@ const Mariam = (e)=>{
         <>
        {/* <form  action="" method="post" > */}
         {/* <input type="text"  name="done"/> */}
+
+        
+        {  loading &&   <LoadingIndicator></LoadingIndicator>}
         <Button onClick={ABASS} name={namee} />
         <Button onClick={Salamatu} name={"Salamatu"}/>
         <Button onClick={Mariam} name={"Mariam"}/>
