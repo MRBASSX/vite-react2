@@ -61,7 +61,7 @@ const GlassmorphismFooter = () => (
                   minWidth: "120px",
                 }}
               >
-                SUBSCRIBE
+               Register
               </button>
             </form>
           </div>
@@ -74,7 +74,7 @@ const GlassmorphismFooter = () => (
       <div className="row">
         {/* Contact Info */}
         <div className="col-md-3 mb-4 mb-md-0 d-flex flex-column justify-content-center">
-          <div className="mb-2 text-secondary">
+          {/* <div className="mb-2 text-secondary">
             <i className="bi bi-telephone me-2"></i>
             0555 38 38 48
           </div>
@@ -85,7 +85,7 @@ const GlassmorphismFooter = () => (
           <div className="mb-2 text-secondary">
             <i className="bi bi-envelope me-2"></i>
             info@upischool.com
-          </div>
+          </div> */}
         </div>
         {/* Footer Menus */}
         <div className="col-md-9">

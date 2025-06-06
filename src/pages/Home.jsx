@@ -8,24 +8,20 @@ import { useState } from 'react'
  
 function Home({name,age,birth,database}) {
 
-   const [loading,SetLoading] = useState(false);
+   const [loading,SetLoading] = useState(1);
+ 
 
 
-//    const  message = [
-//         {
-//             "id":12,
-//             'price':123
-//         }
-//     ]
+
 
 const Mariam = (e)=>{
      e.preventDefault();
      
-     SetLoading(false)
+     SetLoading(0)
 
      setTimeout(()=>{
 
- SetLoading(true)
+ SetLoading(1)
 
      },5000)
    
@@ -54,9 +50,17 @@ const Mariam = (e)=>{
         {  loading &&   <LoadingIndicator></LoadingIndicator>}
         <Button onClick={ABASS} name={namee} />
         <Button onClick={Salamatu} name={"Salamatu"}/>
+       <div className="div" style={{fontSize:"120px"}}>
+        {loading}
+       </div>
         <Button onClick={Mariam} name={"Mariam"}/>
        {/* </form> */}
         {/* <MyDatabase database={message}/> */}
+
+
+
+
+
         <h1>{name}</h1>
         <h1>{age}</h1>
         <h1>{birth}</h1>
