@@ -7,6 +7,7 @@ import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 import NotFound from './pages/NotFound'
 import Contact from './pages/Contact'
 import About from './pages/About'
+import Login from './pages/Login'
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       <Route path='/'  element={<Home/>} />
       <Route path='/contact'  element={<Contact/>} />
       <Route path='/about'  element={<About/>} />
+       <Route path='/login'  element={<Login/>} />
       <Route path='*'  element={<NotFound></NotFound>} />
     
 
