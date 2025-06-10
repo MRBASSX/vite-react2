@@ -1,7 +1,7 @@
 
-  let element =  document.getElementById("clickdrop")
+  let clickdrop =  document.getElementsByClassName("clickdrop")
 
-  console.log(element)
+  console.log(clickdrop)
 
 let Handdrop = () =>
   {
@@ -10,4 +10,4 @@ let Handdrop = () =>
 
   }
 
-  element.addEventListener("click",Handdrop)
+  // element.addEventListener("click",Handdrop)

@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export default function AmazonAccountDropdown() {
   return (
-    <MyHover>
+   
        <div
       style={{
         background: "#fff",
@@ -103,17 +103,8 @@ export default function AmazonAccountDropdown() {
         </div>
       </div>
     </div> 
-    </MyHover>
+   
   );
 }
 
 
-let MyHover =  styled.div`
-display:"None"
-
- &:hover{
- 
- display:"block"
- }
-
-`
