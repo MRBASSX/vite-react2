@@ -84,7 +84,7 @@ export default function Nav() {
           <span>EN</span>
         </div>
         {/* Account */}
-        <div style={{ marginRight: 18, cursor: "pointer" }} className="clickdrop">
+        <div style={{ marginRight: 18, cursor: "pointer" }} id="clickdrop">
           <div style={{ fontSize: 12, color: "#ddd" }}>Hello, sign in</div>
           <div style={{ fontWeight: "bold", color: "#fff" }}>
             Account &amp; Lists

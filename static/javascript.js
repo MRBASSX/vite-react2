@@ -1,13 +1,20 @@
 
-  let clickdrop =  document.getElementsByClassName("clickdrop")
+  let clickdrop =  document.getElementById("#clickdrop")
+  for (const key in clickdrop) {
+   
+      const element = clickdrop[key];
+      
+      console.log(element)
+   
+  }
 
   console.log(clickdrop)
 
 let Handdrop = () =>
   {
 
-    alert("HI")
+    alert("HI");
 
   }
 
-  // element.addEventListener("click",Handdrop)
+  clickdrop.addEventListener("click",Handdrop())
