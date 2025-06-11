@@ -8,6 +8,8 @@ import NotFound from './pages/NotFound'
 import Contact from './pages/Contact'
 import About from './pages/About'
 import Login from './pages/Login'
+import AmazonSecondaryNav from './component/AmazonSecondaryNav'
+import AmazonFooter from './component/AmazonFooter'
 
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
    <Router>
 
    <Nav/>
+   <AmazonSecondaryNav/>
+
 
     <Routes>
       
@@ -35,7 +39,7 @@ function App() {
 
     </Routes>
     
-    <GlassmorphismFooter/>
+    <AmazonFooter/>
    </Router>
     </>
   )
