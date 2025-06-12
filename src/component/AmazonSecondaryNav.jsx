@@ -15,15 +15,8 @@ export default function AmazonSecondaryNav() {
     { label: <><a href="/login">Today's Deals </a></>},
     { label: "Music" },
     { label: <>Gift Cards <span style={{ fontSize: 13 }}>▼</span></>, dropdown: true },
-    { label: "Smart Home" },
-    { label: <>Prime <span style={{ fontSize: 13 }}>▼</span></>, dropdown: true },
-    { label: "Customer Service" },
-    { label: "Books" },
-    { label: "Pharmacy" },
-    { label: "Luxury Stores" },
-    { label: "Amazon Home" },
-    { label: "Fashion" },
-      { label: "MrAbass" }
+
+   
   ];
 
   return (

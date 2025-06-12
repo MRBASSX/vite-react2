@@ -3,6 +3,7 @@ import {MyDatabase} from '../component/listed'
 import Button from '../component/Button'
 import LoadingIndicator from '../component/LoadingIndicator'
 import { useState } from 'react'
+import AmazonFathersDayPromo from '../component/AmazonFathersDayPromo'
 
 
  
@@ -43,6 +44,7 @@ const Mariam = (e)=>{
     return (
 
         <>
+        <AmazonFathersDayPromo></AmazonFathersDayPromo>
        {/* <form  action="" method="post" > */}
         {/* <input type="text"  name="done"/> */}
 
