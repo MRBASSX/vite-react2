@@ -10,6 +10,7 @@ import About from './pages/About'
 import Login from './pages/Login'
 import AmazonSecondaryNav from './component/AmazonSecondaryNav'
 import AmazonFooter from './component/AmazonFooter'
+import Register from './Register'
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
       <Route path='/contact'  element={<Contact/>} />
       <Route path='/about'  element={<About/>} />
        <Route path='/login'  element={<Login/>} />
+        <Route path='/register'  element={<Register/>} />
       <Route path='*'  element={<NotFound></NotFound>} />
     
 

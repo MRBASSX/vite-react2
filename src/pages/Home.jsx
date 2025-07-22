@@ -61,7 +61,7 @@ const Mariam = (e)=>{
 
 
 
-
+ <img src="/vite.svg" alt="dome" srcset="" />
 
         <h1>{name}</h1>
         <h1>{age}</h1>
