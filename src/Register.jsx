@@ -1,16 +1,26 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import api from "./api";
 import axios from "axios";
 
 export default function Register() {
-  const [email, setEmail] = useState("admin@gmail.com");
-   const [name, setName] = useState("Abass Iddrisu")
+  const [email, setEmail] = useState("");
+   const [name, setName] = useState("")
   const [password, setPassword] = useState("");
   const [showError, setShowError] = useState(true);
 
-  const handleSignIn = (e) => {
+
+
+
+  useEffect(() => {
+    api.get("/users/",
+    ).then((res) => {
+      console.log(res.data)
+    });
+  }, []);
+
+  const handleSignIn = async (e) => {
     e.preventDefault();
-    api.post('/users/',{
+   await api.post('/users',{
        name:name,
        email:email,
        password:password
