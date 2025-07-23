@@ -52,7 +52,7 @@ export default function Register() {
   const handleSignIn = (e) => {
     e.preventDefault();
 
-    axios.post('/users', {
+    api.post('/users', {
     username: 'Fred',
     email: 'Flintstone@gmail.com',
     password:'test123456789'
