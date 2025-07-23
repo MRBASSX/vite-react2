@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import api from "./api";
+import axios from "axios";
 
 export default function Register() {
   const [email, setEmail] = useState("admin@gmail.com");
@@ -9,7 +10,7 @@ export default function Register() {
 
   const handleSignIn = (e) => {
     e.preventDefault();
-    api.post('users/',{
+    api.post('/users/',{
        name:name,
        email:email,
        password:password
