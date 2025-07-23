@@ -24,6 +24,7 @@ export default function Register() {
 
 
 //   const handleSignIn = async () => {
+  // e.preventDefault();
 
 //   try {
 //     const response = await fetch('https://express-and-react.vercel.app/users', {
