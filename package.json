@@ -3,11 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-   "proxy": [
-    "https://express-and-react.vercel.app",
-    "http://127.0.0.1:6000"
-   
-  ],
+   "proxy": ["https://express-and-react.vercel.app"],
   "scripts": {
     "dev": "vite",
     "build": "vite build",

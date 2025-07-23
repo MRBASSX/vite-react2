@@ -17,6 +17,12 @@ export default function Register() {
       console.log(res.data)
     });
   }, []);
+   useEffect(() => {
+    api.get("/users/all/",
+    ).then((res) => {
+      console.log(res.data)
+    });
+  }, []);
 
   const handleSignIn = (e) => {
     e.preventDefault();
