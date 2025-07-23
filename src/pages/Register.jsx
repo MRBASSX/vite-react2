@@ -8,15 +8,13 @@ export default function Register() {
   const [password, setPassword] = useState("123456789");
   const [showError, setShowError] = useState(true);
 
-
-
-
   useEffect(() => {
     api.get("/users/",
     ).then((res) => {
       console.log(res.data)
     });
   }, []);
+
    useEffect(() => {
     api.get("/users/all/",
     ).then((res) => {
@@ -24,20 +22,39 @@ export default function Register() {
     });
   }, []);
 
-  const handleSignIn = (e) => {
-    e.preventDefault();
 
-    axios.post('/users', {
+  const handleSignIn = async () => {
+  const response = await fetch('https://express-and-react.vercel.app/users', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
     username: 'Fred',
     email: 'Flintstone@gmail.com',
     password:'test123456789'
   })
-  .then(function (response) {
-    console.log(response);
-  })
-  .catch(function (error) {
-    console.log(error);
   });
+
+  const result = await response.json();
+  console.log(result);
+};
+
+
+  // const handleSignIn = (e) => {
+  //   e.preventDefault();
+
+  //   axios.post('/users', {
+  //   username: 'Fred',
+  //   email: 'Flintstone@gmail.com',
+  //   password:'test123456789'
+  // })
+  // .then(function (response) {
+  //   console.log(response);
+  // })
+  // .catch(function (error) {
+  //   console.log(error);
+  // });
 //     try {
       
 //   const fiba =  await api.post('/users',{
@@ -60,8 +77,8 @@ export default function Register() {
 //     }
 
     // Add login logic here
-    setShowError(true);
-  };
+  //   setShowError(true);
+  // };
 
   return (
     <div

@@ -10,7 +10,7 @@ import About from './pages/About'
 import Login from './pages/Login'
 import AmazonSecondaryNav from './component/AmazonSecondaryNav'
 import AmazonFooter from './component/AmazonFooter'
-import Register from './Register'
+import Register from './pages/Register'
 
 
 function App() {
