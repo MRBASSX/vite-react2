@@ -3,9 +3,9 @@ import api from "./api";
 import axios from "axios";
 
 export default function Register() {
-  const [email, setEmail] = useState("");
-   const [name, setName] = useState("")
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("Mr@gmail.com");
+   const [username, setUsername] = useState("Mr Man")
+  const [password, setPassword] = useState("123456789");
   const [showError, setShowError] = useState(true);
 
 
@@ -23,9 +23,9 @@ export default function Register() {
     try {
       
   const fiba =  await api.post('/users',{
-  "username": "exampleUser",
-  "email": "user@example.com",
-  "password": "securePassword123"
+  username: "exampleUser",
+  email: "user@example.com",
+  password: "securePassword123"
 }
 )
 
@@ -88,9 +88,9 @@ if (fiba.status===201) {
            <div style={{ marginBottom: "14px" }}>
           <input
             type="text"
-            value={name}
-            placeholder="Name"
-            onChange={(e) => setName(e.target.value)}
+            value={username}
+            placeholder="Username"
+            onChange={(e) => setUsername(e.target.value)}
             style={{
               width: "100%",
               padding: "12px",
