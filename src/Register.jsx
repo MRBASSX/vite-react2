@@ -20,21 +20,27 @@ export default function Register() {
 
   const handleSignIn = async (e) => {
     e.preventDefault();
-   await api.post('/users',{
-       name:name,
-       email:email,
-       password:password
-    }).then((MyData)=>{
+    try {
+      
+  const fiba =  await api.post('/users',{
+  "username": "exampleUser",
+  "email": "user@example.com",
+  "password": "securePassword123"
+}
+)
 
-        console.log(MyData.status)
-    }).catch((error)=>{
+if (fiba.status===201) {
 
-        console.log(error)
-    }).finally(()=>{
+  console.log(fiba.data)
+  
+}
 
+    } catch (error) {
 
-        }
-    )
+      console.log(error)
+      
+    }
+
     // Add login logic here
     setShowError(true);
   };
