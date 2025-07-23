@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from "react";
 import api from "../api";
-import axios from "axios";
+
 
 export default function Register() {
   const [email, setEmail] = useState("Mr@gmail.com");
@@ -54,9 +54,9 @@ export default function Register() {
     e.preventDefault();
 
     api.post('/users', {
-    username: 'Fred',
-    email: 'Flintstone@gmail.com',
-    password:'test123456789'
+    username: username,
+    email: email,
+    password:password
   })
   .then(function (response) {
     console.log(response);
