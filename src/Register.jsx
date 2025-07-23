@@ -18,28 +18,40 @@ export default function Register() {
     });
   }, []);
 
-  const handleSignIn = async (e) => {
+  const handleSignIn = (e) => {
     e.preventDefault();
-    try {
+
+    axios.post('/users', {
+    username: 'Fred',
+    email: 'Flintstone@gmail.com',
+    password:'test123456789'
+  })
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+//     try {
       
-  const fiba =  await api.post('/users',{
-  username: "exampleUser",
-  email: "user@example.com",
-  password: "securePassword123"
-}
-)
+//   const fiba =  await api.post('/users',{
+//   username: "exampleUser",
+//   email: "user@example.com",
+//   password: "securePassword123"
+// }
+// )
 
-if (fiba.status===201) {
+// if (fiba.status===201) {
 
-  console.log(fiba.data)
+//   console.log(fiba.data)
   
-}
+// }
 
-    } catch (error) {
+//     } catch (error) {
 
-      console.log(error)
+//       console.log(error)
       
-    }
+//     }
 
     // Add login logic here
     setShowError(true);
