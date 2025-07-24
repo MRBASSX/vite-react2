@@ -3,18 +3,16 @@ import React from "react";
 export default function AmazonSecondaryNav() {
 
   const navItems = [
-    { label: <><span style={{ fontSize: 22, marginRight: 3 }}>&#9776;</span> <a href="/">All</a></>, dropdown: false },
-    { label: "Amazon Haul" },
-    { label: <>Medical Care <span style={{ fontSize: 13 }}>▼</span></>, dropdown: true },
-    { label: "Saks" },
-    { label: "Best Sellers" },
-    { label: "Amazon Basics" },
-    { label: "New Releases" },
-    { label: "Registry" },
-    { label: <>Groceries <span style={{ fontSize: 13 }}>▼</span></>, dropdown: true },
-    { label: <><a href="/login">Today's Deals </a></>},
-    { label: "Music" },
-    { label: <>Gift Cards <span style={{ fontSize: 13 }}>▼</span></>, dropdown: true },
+    { label:<><span style={{ fontSize: 22, marginRight: 3 }}>&#9776;</span> <a href="/">All</a></>, dropdown: false },
+    { label:<><a href="/">Home</a></>},
+    { label:<><a href="/shop">Shop</a></> },
+    { label:<><a href="/contact">Contact</a></>},
+    { label:<><a href="/checkout">Checkout</a></>},
+    { label:<><a href="/about">About</a></>},
+    { label:<><a href="/register">Register</a></> },
+    { label: <><a href="/login">Login </a></>},
+    { label: <><a href="/cart">Cart </a></>},
+   
 
    
   ];
