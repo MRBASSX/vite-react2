@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from "react";
 import api from "../api";
+import apiAuth from "../apiAuth";
 
 
 export default function Register() {
@@ -9,7 +10,7 @@ export default function Register() {
   const [showError, setShowError] = useState(true);
 
   useEffect(() => {
-    api.get("/users/",
+    apiAuth.get("/users/",
     ).then((res) => {
       console.log(res.data)
     });
